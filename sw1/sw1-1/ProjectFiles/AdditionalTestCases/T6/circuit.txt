@@ -1,0 +1,30 @@
+
+
+
+PRIMARY_INPUTS A B C D
+
+INTERNAL_SIGNALS L N O
+
+
+
+PRIMARY_OUTPUTS E F
+
+
+
+NOR2 A B L
+
+
+AND2 L C O
+
+
+
+
+INV D N
+INV O E
+
+
+
+
+OR2 O N F
+
+
