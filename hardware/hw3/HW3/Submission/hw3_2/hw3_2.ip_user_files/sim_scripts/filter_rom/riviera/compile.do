@@ -1,0 +1,20 @@
+transcript off
+onbreak {quit -force}
+onerror {quit -force}
+transcript on
+
+vlib work
+vmap -link {D:/col215/hw3_2/hw3_2.cache/compile_simlib/riviera}
+vlib riviera/dist_mem_gen_v8_0_13
+vlib riviera/xil_defaultlib
+
+vlog -work dist_mem_gen_v8_0_13  -incr -v2k5 -l dist_mem_gen_v8_0_13 -l xil_defaultlib \
+"../../../ipstatic/simulation/dist_mem_gen_v8_0.v" \
+
+vlog -work xil_defaultlib  -incr -v2k5 -l dist_mem_gen_v8_0_13 -l xil_defaultlib \
+"../../../../hw3_2.gen/sources_1/ip/filter_rom/sim/filter_rom.v" \
+
+
+vlog -work xil_defaultlib \
+"glbl.v"
+

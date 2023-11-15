@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Sep 26 15:14:59 2023
+# Process ID: 137392
+# Current directory: /home/btech/tt1211139/col215/assi_02
+# Command line: vivado
+# Log file: /home/btech/tt1211139/col215/assi_02/vivado.log
+# Journal file: /home/btech/tt1211139/col215/assi_02/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/btech/tt1211139/col215/assi_02/assi_02.xpr
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source main_tb.tcl
+close_sim
+launch_simulation
+source main_tb.tcl
+close_sim
+launch_simulation
+source main_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source main.tcl
+close_sim
+launch_simulation
+source main.tcl
+create_wave_config
+close_sim
+launch_simulation
+source main.tcl
+close_sim
+update_compile_order -fileset sim_1
+launch_simulation
+source main_tb.tcl
+close_sim
+launch_simulation
+source main_tb.tcl

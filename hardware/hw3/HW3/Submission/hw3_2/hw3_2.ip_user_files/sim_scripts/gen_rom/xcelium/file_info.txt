@@ -1,0 +1,1 @@
+gen_rom_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../hw3_2.gen/sources_1/ip/gen_rom/gen_rom_sim_netlist.vhdl,

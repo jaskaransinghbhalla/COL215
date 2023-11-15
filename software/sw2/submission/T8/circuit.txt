@@ -1,0 +1,19 @@
+// Format:
+// GATE_TYPE Input1 Input2...Output
+// 
+// Ignore blank lines, lines with spaces only, and lines starting with "//"
+// delay 8.4
+// area 36
+
+
+
+PRIMARY_INPUTS A C D E
+PRIMARY_OUTPUTS J
+INTERNAL_SIGNALS B F H I G
+INV A B
+AND2 C B F
+NAND2 D E H
+DFF G I
+NOR2 H I J
+INV F G
+

@@ -1,0 +1,2 @@
+gen_ram.v,verilog,xil_defaultlib,../../../../hw3_2.gen/sources_1/ip/gen_ram/sim/gen_ram.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,14 @@
+// Format:
+// GATE_TYPE Input1 Input2...Output
+// 
+// Ignore blank lines, lines with spaces only, and lines starting with "//"
+
+PRIMARY_INPUTS A0 A1
+PRIMARY_OUTPUTS A4 A5
+INTERNAL_SIGNALS A2 A3 A6
+INV A0 A2
+AND2 A2 A1 A3
+DFF A3 A6
+NAND2 A2 A6 A4
+INV A6 A5
+

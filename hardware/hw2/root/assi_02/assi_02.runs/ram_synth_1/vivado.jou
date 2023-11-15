@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Sep 26 14:21:36 2023
+# Process ID: 131009
+# Current directory: /home/btech/tt1211139/col215/assi_02/assi_02.runs/ram_synth_1
+# Command line: vivado -log ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram.tcl
+# Log file: /home/btech/tt1211139/col215/assi_02/assi_02.runs/ram_synth_1/ram.vds
+# Journal file: /home/btech/tt1211139/col215/assi_02/assi_02.runs/ram_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ram.tcl -notrace

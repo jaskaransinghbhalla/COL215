@@ -1,0 +1,2 @@
+filter_rom.v,verilog,xil_defaultlib,../../../../hw3_2.gen/sources_1/ip/filter_rom/sim/filter_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

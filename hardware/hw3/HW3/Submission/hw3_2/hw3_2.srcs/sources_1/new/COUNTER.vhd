@@ -1,0 +1,39 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY COUNTER IS
+    PORT (
+        PIXEL_CLK : IN STD_LOGIC;
+        RST : IN STD_LOGIC;
+        HCOUNT : OUT INTEGER;
+        VCOUNT : OUT INTEGER
+    );
+END COUNTER;
+
+ARCHITECTURE BEHAVIORAL OF COUNTER IS
+BEGIN
+    COUNTER_PROC : PROCESS (PIXEL_CLK, RST)
+        VARIABLE HCOUNT_TMP : INTEGER := - 1;
+        VARIABLE VCOUNT_TMP : INTEGER := 0;
+    BEGIN
+        IF (RST = '1') THEN
+            HCOUNT_TMP := 0;
+            VCOUNT_TMP := 0;
+        ELSIF (PIXEL_CLK'event AND PIXEL_CLK = '1') THEN
+            IF (HCOUNT_TMP = 799) THEN
+                HCOUNT_TMP := 0;
+                IF (VCOUNT_TMP = 525) THEN
+                    VCOUNT_TMP := 0;
+                ELSE
+                    VCOUNT_TMP := VCOUNT_TMP + 1;
+                END IF;
+            ELSE
+                HCOUNT_TMP := HCOUNT_TMP + 1;
+            END IF;
+        END IF;
+        HCOUNT <= HCOUNT_TMP;
+        VCOUNT <= VCOUNT_TMP;
+    END PROCESS;
+END BEHAVIORAL;
