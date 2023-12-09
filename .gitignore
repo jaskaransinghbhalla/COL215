@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.DS_Store
+./hardware/hw2/reference/others/*
 
 # C extensions
 *.so
